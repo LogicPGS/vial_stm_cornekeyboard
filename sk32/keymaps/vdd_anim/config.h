@@ -38,12 +38,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 # define SPLIT_MODS_ENABLE
 # define SPLIT_OLED_ENABLE
 
-//USB CONFIGURATION
-//ARM DEVICES #define SPLIT_USB_DETECT IS ENABLE BY DEFAULT
-//NEEDS REVIEW
-#define SPLIT_USB_TIMEOUT 3000
-#define SPLIT_USB_TIMEOUT_POLL 20
-
 //TIME THAT THE OLED IS ON
 #ifdef OLED_ENABLE
     #define OLED_TIMEOUT 20000

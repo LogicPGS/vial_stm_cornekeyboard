@@ -2,7 +2,7 @@
   "keyboard_name": "SK32",
   "manufacturer": "LogicPGS",
   "url": "",
-  "maintainer": "vdd",
+  "maintainer": "dmedina09 & luis96raul1",
   "usb": {
     "vid" : "0x0167",
     "pid" : "0x169B",

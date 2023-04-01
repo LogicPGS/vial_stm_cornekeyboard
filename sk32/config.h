@@ -45,24 +45,17 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define SERIAL_USART_TIMEOUT 20 //ADDITIONAL
 #define SERIAL_USART_TX_PAL_MODE 7
 #define SERIAL_USART_RX_PAL_MODE 7
-//#define SERIAL_USART_TIMEOUT 5 //ADDITIONAL
-//#define SERIAL_USART_CR2 0x0 //1 STOP BIT IS ENOUGH
 #define SELECT_SOFT_SERIAL_SPEED 1 //ADDITIONAL {1 - DEFAULT}
 
-//#define FORCED_SYNC_THROTTLE_MS 500 //ADDITIONAL
+//SPLIT KEYBOARD
+#define SPLIT_USB_DETECT
+#define SPLIT_USB_TIMEOUT 5000
+#define SPLIT_USB_TIMEOUT_POLL 100
 
-// BITBANG DRIVER SERIAL
-// ACTIVATE FOR SERIAL BITBANG DRIVER
-// PIN A3 IS RX2 IN STM32F401CCU6
-/*
-#define SOFT_SERIAL_PIN A3
-#define SELECT_SOFT_SERIAL_SPEED 1           
-*/                                   
-
-// OLED DISPLAY 128x64
+// OLED DISPLAY 128x32
 // I2C COMMUNICATION
-// SCL B6 PIN
-// SDA B7 PIN
+// SCL B6 PIN (default)
+// SDA B7 PIN (default)
 #ifdef OLED_ENABLE
     #define OLED_BRIGHTNESS 150
     //#define OLED_DISPLAY_128X64
@@ -78,7 +71,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define WS2812_PWM_PAL_MODE 1
 #define WS2812_DMA_STREAM STM32_DMA2_STREAM5 //TIMX_UP
 #define WS2812_DMA_CHANNEL 6
-//#define WS2812_EXTERNAL_PULLUP
 
 #ifdef RGB_MATRIX_ENABLE
 #    define RGBLED_NUM 54 // NUMBER OF LEDS
@@ -91,3 +83,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // BOOTMAGIC
 #define BOOTMAGIC_LITE_ROW 0
 #define BOOTMAGIC_LITE_COLUMN 0
+
+// BOARD WITH 8MHz CRYSTAL
+#ifdef CRYSTAL_8MHZ
+#    define STM32_HSECLK 8000000
+#endif

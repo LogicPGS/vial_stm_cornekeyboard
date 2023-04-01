@@ -40,18 +40,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 # define SPLIT_MODS_ENABLE
 # define SPLIT_OLED_ENABLE
 
-//USB CONFIGURATION
-//ARM DEVICES #define SPLIT_USB_DETECT IS ENABLE BY DEFAULT
-//NEEDS REVIEW
-#define SPLIT_USB_TIMEOUT 3000
-#define SPLIT_USB_TIMEOUT_POLL 20
-
-/*
-#ifdef RGB_MATRIX_ENABLE
-    #define RGBLED_SPLIT
-#endif
-*/
-
 //TIME THAT THE OLED IS ON
 #ifdef OLED_ENABLE
     #define OLED_TIMEOUT 20000
@@ -120,4 +108,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     #define ENABLE_RGB_MATRIX_SOLID_MULTISPLASH
 #endif
 
+#endif
+
+#ifdef MIDI_ENABLE
+//#    define MIDI_BASIC
+#    define MIDI_ADVANCED
 #endif
