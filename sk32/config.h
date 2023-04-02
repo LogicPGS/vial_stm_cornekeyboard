@@ -49,7 +49,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 //SPLIT KEYBOARD
 #define SPLIT_USB_DETECT
-#define SPLIT_USB_TIMEOUT 5000
+#define SPLIT_USB_TIMEOUT 8500
 #define SPLIT_USB_TIMEOUT_POLL 100
 
 // OLED DISPLAY 128x32
@@ -58,9 +58,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // SDA B7 PIN (default)
 #ifdef OLED_ENABLE
     #define OLED_BRIGHTNESS 150
-    //#define OLED_DISPLAY_128X64
-    //#define I2C1_SCL_PIN B6
-    //#define I2C1_SDA_PIN B7
 #endif
 
 // LIGHTING EFFECTS AND CONFIGURATION

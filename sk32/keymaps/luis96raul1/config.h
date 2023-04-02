@@ -1,12 +1,12 @@
 
 
-// qmk compile -kb crkbd_vial_logicpgs/sk32 -km luis96raul1      <------- to compile
+// qmk compile -kb vial_stm_cornekeyboard/sk32 -km luis96raul1      <------- to compile
 
 #pragma once
 
 #define VIAL_KEYBOARD_UID {0x63, 0x8B, 0x74, 0x2F, 0xE2, 0x8C, 0xAB, 0xC1}
 
-#define DYNAMIC_KEYMAP_LAYER_COUNT 6  // LAYERS FOR KEYMAPS
+#define DYNAMIC_KEYMAP_LAYER_COUNT 8  // LAYERS FOR KEYMAPS
 
 // TAP DANCE
 #define TAPPING_TERM 300
@@ -23,7 +23,7 @@
 #   define SPLIT_LED_STATE_ENABLE
 #   define SPLIT_MODS_ENABLE
 #   define SPLIT_OLED_ENABLE
-#   define OLED_FONT_H "keyboards/crkbd_vial_logicpgs/sk32/keymaps/luis96raul1/glcdfont.c"
+#   define OLED_FONT_H "keyboards/vial_stm_cornekeyboard/sk32/keymaps/luis96raul1/glcdfont.c"
 #   define OLED_TIMEOUT 0
 #endif
 

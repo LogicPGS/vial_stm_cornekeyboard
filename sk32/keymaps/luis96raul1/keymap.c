@@ -29,7 +29,7 @@ enum layers {
 // Dual function escape with left command
 
 enum custom_keycodes {
-  QWERTY = SAFE_RANGE,
+  QWERTY = USER00,
   DVORAK,
   LOWER,
   RAISE,

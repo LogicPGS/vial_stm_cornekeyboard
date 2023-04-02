@@ -2,7 +2,7 @@
 
 #MCU AND BOARD CONFIGURATION
 MCU_STM32F401 ?= no  #SK32 v1.0 (256 KB)
-MCU_STM32F411 ?= no #SK32 v1.1 (512 KB)
+MCU_STM32F411 ?= yes #SK32 v1.1 (512 KB)
 
 ifeq ($(strip $(MCU_STM32F401)), yes)
     #OPT_DEFS += -DMCU_F401
@@ -23,7 +23,7 @@ BOOTLOADER = stm32-dfu
 #   change yes to no to disable
 #
 BOOTMAGIC_ENABLE = yes     # Enable Bootmagic Lite
-MOUSEKEY_ENABLE = no       # Mouse keys
+MOUSEKEY_ENABLE = yes       # Mouse keys
 EXTRAKEY_ENABLE = yes       # Audio control and System control
 CONSOLE_ENABLE = no         # Console for debug
 COMMAND_ENABLE = no         # Commands for debug and configuration
