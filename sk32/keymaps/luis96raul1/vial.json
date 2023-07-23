@@ -56,14 +56,30 @@
     ]
   },
   "customKeycodes": [
-    { "name": "QWERTY", "title": "Qwerty Layout", "shortName": "QWERTY" },
-    { "name": "DVORAK", "title": "Dvorak Layout", "shortName": "DVORAK" },
-    { "name": "LOWER", "title": "LOWER Layer", "shortName": "LOWER" },
-    { "name": "RAISE", "title": "RAISE Layer", "shortName": "RAISE" },
-    { "name": "ADJUST", "title": "ADJUST Layer", "shortName": "ADJUST" },
-    { "name": "QWERTY_MAC", "title": "Qwerty Mac", "shortName": "QWERTY_MAC" },
-    { "name": "LOWER_MAC", "title": "LOWER Mac", "shortName": "LOWER_MAC" },
-    { "name": "RAISE_MAC", "title": "RAISE Mac", "shortName": "RAISE_MAC" },
-    { "name": "ADJUST_MAC", "title": "ADJUST Mac", "shortName": "ADJUST_MAC" }
+      { "name": "QWERTY", "title": "Qwerty Layout", "shortName": "Qwerty_LT" },
+      { "name": "DVORAK", "title": "Dvorak Layout", "shortName": "Qvorak_LT" },
+      {
+          "name": "QWERTY_MAC",
+          "title": "Qwerty Layout",
+          "shortName": "M-Qwerty_LT"
+      },
+      {
+          "name": "LOWER_MAC",
+          "title": "MAC LOWER Layer",
+          "shortName": "M-Lower_L"
+      },
+      {
+          "name": "RAISE_MAC",
+          "title": "MAC RAISE Layer",
+          "shortName": "M-Raise_L"
+      },
+      {
+          "name": "ADJUST_MAC",
+          "title": "MAC ADJUST Layer",
+          "shortName": "M-Adjust_L"
+      },
+      { "name": "LOWER", "title": "LOWER Layer", "shortName": "Lower_L" },
+      { "name": "RAISE", "title": "RAISE Layer", "shortName": "Raise_L" },
+      { "name": "ADJUST", "title": "ADJUST Layer", "shortName": "Adjust_L" }
   ]
 }
