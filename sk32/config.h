@@ -30,7 +30,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     { B15, B14, B13, B12, A7, A6 }
 
 // LATENCY??
-#define DEBOUNCE 2
+#define DEBOUNCE 5
 
 /* COL2ROW, ROW2COL */
 #define DIODE_DIRECTION COL2ROW
@@ -42,20 +42,17 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define SERIAL_USART_TX_PIN A2
 #define SERIAL_USART_RX_PIN A3
 #define SERIAL_USART_DRIVER SD2
-#define SERIAL_USART_TIMEOUT 20 //ADDITIONAL
 #define SERIAL_USART_TX_PAL_MODE 7
 #define SERIAL_USART_RX_PAL_MODE 7
-#define SELECT_SOFT_SERIAL_SPEED 1 //ADDITIONAL {1 - DEFAULT}
 
 //SPLIT KEYBOARD
 #define SPLIT_USB_DETECT
-#define SPLIT_USB_TIMEOUT 8500
-#define SPLIT_USB_TIMEOUT_POLL 100
+#define SPLIT_WATCHDOG_ENABLE
+#define SPLIT_WATCHDOG_TIMEOUT 3000
+//#define EE_HANDS
+//#define SPLIT_USB_TIMEOUT 2000
+//#define SPLIT_USB_TIMEOUT_POLL 100
 
-// OLED DISPLAY 128x32
-// I2C COMMUNICATION
-// SCL B6 PIN (default)
-// SDA B7 PIN (default)
 #ifdef OLED_ENABLE
     #define OLED_BRIGHTNESS 150
 #endif
