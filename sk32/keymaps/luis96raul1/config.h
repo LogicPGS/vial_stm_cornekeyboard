@@ -23,7 +23,7 @@
 #define VIALRGB_NO_DIRECT
 
 // DEFINE MASTER
-#define MASTER_LEFT
+#define MASTER_RIGHT
 
 // OLED FONT
 #ifdef OLED_ENABLE
